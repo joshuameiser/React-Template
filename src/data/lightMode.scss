@@ -1,0 +1,40 @@
+// TODO: Adjust colors for dark mode
+
+// Just for reference
+$primary-hex: #800080;
+$secondary-hex: #0077ff;
+$tertiary-hex: #0e0af0;
+
+$primary-hue: 100;
+$primary-saturation: 100%;
+$primary-lightness: 25%;
+
+$secondary-hue: 212;
+$secondary-saturation: 100%;
+$secondary-lightness: 50%;
+
+$tertiary-hue: 241;
+$tertiary-saturation: 92%;
+$tertiary-lightness: 49%;
+
+$primary-color: hsl($primary-hue, $primary-saturation, $primary-lightness);
+$secondary-color: hsl(
+	$secondary-hue,
+	$secondary-saturation,
+	$secondary-lightness
+);
+$tertiary-color: hsl($tertiary-hue, $tertiary-saturation, $tertiary-lightness);
+
+[data-theme="light-mode"] {
+	--primaryColor: #{$primary-color};
+	--secondaryColor: #{$secondary-color};
+	--tertiaryColor: #{$tertiary-color};
+	--textColor: hsl($primary-hue, $primary-saturation, 5%);
+	// --backgroundColor: black;
+	// --secondaryBackgroundColor: #303030;
+	// --primaryColor: #{$primary-color};
+	// --secondaryColor: #{$secondary-color};
+	// --contrastColor: #ced4da;
+	// --primaryHover: #{lighten($primary-color, 10%)};
+	// --secondaryHover: #{lighten($secondary-color, 10%)};
+}

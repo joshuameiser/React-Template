@@ -8,13 +8,19 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
+		"@joshuameiser/component-library": "^0.0.40",
+		"i18next": "^22.1.4",
 		"react": "^18.0.0",
-		"react-dom": "^18.0.0"
+		"react-dom": "^18.0.0",
+		"react-i18next": "^12.1.1",
+		"styled-components": "^5.3.6"
 	},
 	"devDependencies": {
 		"@types/react": "^18.0.0",
 		"@types/react-dom": "^18.0.0",
+		"@types/styled-components": "^5.1.26",
 		"@vitejs/plugin-react": "^1.3.0",
+		"sass": "^1.56.1",
 		"typescript": "^4.6.3",
 		"vite": "^3.0.10",
 		"vite-plugin-pwa": "^0.13.3"
