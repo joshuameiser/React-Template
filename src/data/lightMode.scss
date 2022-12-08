@@ -1,11 +1,13 @@
-// TODO: Adjust colors for dark mode
+// TODO: Adjust colors for light mode
 
 // Just for reference
 $primary-hex: #800080;
 $secondary-hex: #0077ff;
 $tertiary-hex: #0e0af0;
 
-$primary-hue: 100;
+$background-color: #ebebeb;
+
+$primary-hue: 300;
 $primary-saturation: 100%;
 $primary-lightness: 25%;
 
@@ -25,16 +27,94 @@ $secondary-color: hsl(
 );
 $tertiary-color: hsl($tertiary-hue, $tertiary-saturation, $tertiary-lightness);
 
+$primary-hover: hsl(
+	$primary-hue,
+	$primary-saturation,
+	($primary-lightness - 10%)
+);
+
+$secondary-hover: hsl(
+	$secondary-hue,
+	$secondary-saturation,
+	($secondary-lightness - 10%)
+);
+
+$tertiary-hover: hsl(
+	$tertiary-hue,
+	$tertiary-saturation,
+	($tertiary-lightness - 10%)
+);
+
+$primary-color-10: hsl($primary-hue, $primary-saturation, 10%);
+$primary-color-20: hsl($primary-hue, $primary-saturation, 20%);
+$primary-color-30: hsl($primary-hue, $primary-saturation, 30%);
+$primary-color-40: hsl($primary-hue, $primary-saturation, 40%);
+$primary-color-50: hsl($primary-hue, $primary-saturation, 50%);
+$primary-color-60: hsl($primary-hue, $primary-saturation, 60%);
+$primary-color-70: hsl($primary-hue, $primary-saturation, 70%);
+$primary-color-80: hsl($primary-hue, $primary-saturation, 80%);
+$primary-color-90: hsl($primary-hue, $primary-saturation, 90%);
+
+$secondary-color-10: hsl($secondary-hue, $secondary-saturation, 10%);
+$secondary-color-20: hsl($secondary-hue, $secondary-saturation, 20%);
+$secondary-color-30: hsl($secondary-hue, $secondary-saturation, 30%);
+$secondary-color-40: hsl($secondary-hue, $secondary-saturation, 40%);
+$secondary-color-50: hsl($secondary-hue, $secondary-saturation, 50%);
+$secondary-color-60: hsl($secondary-hue, $secondary-saturation, 60%);
+$secondary-color-70: hsl($secondary-hue, $secondary-saturation, 70%);
+$secondary-color-80: hsl($secondary-hue, $secondary-saturation, 80%);
+$secondary-color-90: hsl($secondary-hue, $secondary-saturation, 90%);
+
+$tertiary-color-10: hsl($tertiary-hue, $tertiary-saturation, 10%);
+$tertiary-color-20: hsl($tertiary-hue, $tertiary-saturation, 20%);
+$tertiary-color-30: hsl($tertiary-hue, $tertiary-saturation, 30%);
+$tertiary-color-40: hsl($tertiary-hue, $tertiary-saturation, 40%);
+$tertiary-color-50: hsl($tertiary-hue, $tertiary-saturation, 50%);
+$tertiary-color-60: hsl($tertiary-hue, $tertiary-saturation, 60%);
+$tertiary-color-70: hsl($tertiary-hue, $tertiary-saturation, 70%);
+$tertiary-color-80: hsl($tertiary-hue, $tertiary-saturation, 80%);
+$tertiary-color-90: hsl($tertiary-hue, $tertiary-saturation, 90%);
+
 [data-theme="light-mode"] {
 	--primaryColor: #{$primary-color};
 	--secondaryColor: #{$secondary-color};
 	--tertiaryColor: #{$tertiary-color};
-	--textColor: hsl($primary-hue, $primary-saturation, 5%);
-	// --backgroundColor: black;
-	// --secondaryBackgroundColor: #303030;
-	// --primaryColor: #{$primary-color};
-	// --secondaryColor: #{$secondary-color};
-	// --contrastColor: #ced4da;
-	// --primaryHover: #{lighten($primary-color, 10%)};
-	// --secondaryHover: #{lighten($secondary-color, 10%)};
+
+	--textColor: hsl(#{$secondary-hue}, #{$secondary-saturation}, 10%);
+
+	--backgroundColor: #{$background-color};
+
+	--primaryHover: #{$primary-hover};
+	--secondaryHover: #{$secondary-hover};
+	--tertiaryHover: #{$tertiary-hover};
+
+	--primaryColor-10: #{$primary-color-10};
+	--primaryColor-20: #{$primary-color-20};
+	--primaryColor-30: #{$primary-color-30};
+	--primaryColor-40: #{$primary-color-40};
+	--primaryColor-50: #{$primary-color-50};
+	--primaryColor-60: #{$primary-color-60};
+	--primaryColor-70: #{$primary-color-70};
+	--primaryColor-80: #{$primary-color-80};
+	--primaryColor-90: #{$primary-color-90};
+
+	--secondaryColor-10: #{$secondary-color-10};
+	--secondaryColor-20: #{$secondary-color-20};
+	--secondaryColor-30: #{$secondary-color-30};
+	--secondaryColor-40: #{$secondary-color-40};
+	--secondaryColor-50: #{$secondary-color-50};
+	--secondaryColor-60: #{$secondary-color-60};
+	--secondaryColor-70: #{$secondary-color-70};
+	--secondaryColor-80: #{$secondary-color-80};
+	--secondaryColor-90: #{$secondary-color-90};
+
+	--tertiaryColor-10: #{$tertiary-color-10};
+	--tertiaryColor-20: #{$tertiary-color-20};
+	--tertiaryColor-30: #{$tertiary-color-30};
+	--tertiaryColor-40: #{$tertiary-color-40};
+	--tertiaryColor-50: #{$tertiary-color-50};
+	--tertiaryColor-60: #{$tertiary-color-60};
+	--tertiaryColor-70: #{$tertiary-color-70};
+	--tertiaryColor-80: #{$tertiary-color-80};
+	--tertiaryColor-90: #{$tertiary-color-90};
 }

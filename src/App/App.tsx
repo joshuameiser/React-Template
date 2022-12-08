@@ -13,7 +13,6 @@ import { initReactI18next } from "react-i18next";
 import { ThemeToggle, LanguageToggle } from "@joshuameiser/component-library";
 
 import { Config } from "../config/Config";
-import { Test } from "../Test";
 
 i18n.use(initReactI18next).init({
 	resources: {
@@ -94,8 +93,11 @@ function App() {
 					/>
 					<div>
 						<p style={{ color: "var(--primaryColor)" }}>Primary Color</p>
+						<p style={{ color: "var(--primaryHover)" }}>Primary Color</p>
 						<p style={{ color: "var(--secondaryColor)" }}>Secondary Color</p>
+						<p style={{ color: "var(--secondaryHover)" }}>Secondary Color</p>
 						<p style={{ color: "var(--tertiaryColor)" }}>Tertiary Color</p>
+						<p style={{ color: "var(--tertiaryHover)" }}>Tertiary Color</p>
 					</div>
 				</div>
 			</ThemeContext.Provider>
