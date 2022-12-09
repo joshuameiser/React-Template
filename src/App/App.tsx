@@ -12,8 +12,6 @@ import {
 import { initReactI18next } from "react-i18next";
 import { ThemeToggle, LanguageToggle } from "@joshuameiser/component-library";
 
-import { Config } from "../config/Config";
-
 i18n.use(initReactI18next).init({
 	resources: {
 		en: { translation: "" },
@@ -56,10 +54,6 @@ function App() {
 					: "light-mode"
 			);
 	}, []);
-
-	useEffect(() => {
-		console.log(theme);
-	});
 
 	// language
 	useEffect(() => {
