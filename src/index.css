@@ -1,33 +1,38 @@
 /* TODO: Replace with own fonts (+ replace the font folder in data/fonts) */
+/* https://gwfh.mranftl.com/fonts/saira-extra-condensed?subsets=latin -- link to downloader */
+/* saira-extra-condensed-regular - latin */
 @font-face {
-	font-family: "Regular";
-	src: local("SairaExtraCondensed-Regular"),
-		url("./data/fonts/Saira_Extra_Condensed/SairaExtraCondensed-Regular.ttf")
-			format("truetype");
+	font-family: "Saira Extra Condensed";
+	font-style: normal;
+	font-weight: 400;
+	src: local(""),
+		url("..data/fonts/saira-extra-condensed-v11-latin-regular.woff2")
+			format("woff2"),
+		url("..data/fonts/saira-extra-condensed-v11-latin-regular.woff")
+			format("woff");
 }
-
+/* saira-extra-condensed-700 - latin */
 @font-face {
-	font-family: "Medium";
-	src: local("SairaExtraCondensed-Medium"),
-		url("./data/fonts/Saira_Extra_Condensed/SairaExtraCondensed-Medium.ttf")
-			format("truetype");
-}
-
-@font-face {
-	font-family: "Bold";
-	src: local("SairaExtraCondensed-Bold"),
-		url("./data/fonts/Saira_Extra_Condensed/SairaExtraCondensed-Bold.ttf")
-			format("truetype");
+	font-family: "Saira Extra Condensed";
+	font-style: normal;
+	font-weight: 700;
+	src: local(""),
+		url("..data/fonts/saira-extra-condensed-v11-latin-700.woff2")
+			format("woff2"),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */
+			url("..data/fonts/saira-extra-condensed-v11-latin-700.woff")
+			format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 body {
 	margin: 0;
 	/* TODO: Replace "Regular" with the here used font (if several fonts are defined) */
-	font-family: "Regular", -apple-system, BlinkMacSystemFont, "Segoe UI",
-		"Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-		"Helvetica Neue", sans-serif;
+	font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+		"Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	font-weight: 400;
 }
 
 code {
@@ -42,7 +47,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Bold";
+	font-family: "Saira Extra Condensed";
+	font-weight: 700;
 }
 
 p {

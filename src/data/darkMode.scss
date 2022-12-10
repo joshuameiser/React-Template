@@ -75,6 +75,17 @@ $tertiary-color-70: hsl($tertiary-hue, $tertiary-saturation, 70%);
 $tertiary-color-80: hsl($tertiary-hue, $tertiary-saturation, 80%);
 $tertiary-color-90: hsl($tertiary-hue, $tertiary-saturation, 90%);
 
+// See https://getbootstrap.com/docs/5.2/customize/color/
+$gray-100: hsl(210, 17%, 98%);
+$gray-200: hsl(210, 16%, 93%);
+$gray-300: hsl(210, 14%, 89%);
+$gray-400: hsl(210, 14%, 83%);
+$gray-500: hsl(210, 11%, 71%);
+$gray-600: hsl(208, 7%, 46%);
+$gray-700: hsl(210, 9%, 31%);
+$gray-800: hsl(210, 10%, 23%);
+$gray-900: hsl(210, 11%, 15%);
+
 [data-theme="dark-mode"] {
 	--primaryColor: #{$primary-color};
 	--secondaryColor: #{$secondary-color};
@@ -88,33 +99,43 @@ $tertiary-color-90: hsl($tertiary-hue, $tertiary-saturation, 90%);
 	--secondaryHover: #{$secondary-hover};
 	--tertiaryHover: #{$tertiary-hover};
 
-	--primaryColor-10: #{$primary-color-10};
-	--primaryColor-20: #{$primary-color-20};
-	--primaryColor-30: #{$primary-color-30};
-	--primaryColor-40: #{$primary-color-40};
-	--primaryColor-50: #{$primary-color-50};
-	--primaryColor-60: #{$primary-color-60};
-	--primaryColor-70: #{$primary-color-70};
-	--primaryColor-80: #{$primary-color-80};
-	--primaryColor-90: #{$primary-color-90};
+	--primaryColor-100: #{$primary-color-100};
+	--primaryColor-200: #{$primary-color-200};
+	--primaryColor-300: #{$primary-color-300};
+	--primaryColor-400: #{$primary-color-400};
+	--primaryColor-500: #{$primary-color-500};
+	--primaryColor-600: #{$primary-color-600};
+	--primaryColor-700: #{$primary-color-700};
+	--primaryColor-800: #{$primary-color-800};
+	--primaryColor-900: #{$primary-color-900};
 
-	--secondaryColor-10: #{$secondary-color-10};
-	--secondaryColor-20: #{$secondary-color-20};
-	--secondaryColor-30: #{$secondary-color-30};
-	--secondaryColor-40: #{$secondary-color-40};
-	--secondaryColor-50: #{$secondary-color-50};
-	--secondaryColor-60: #{$secondary-color-60};
-	--secondaryColor-70: #{$secondary-color-70};
-	--secondaryColor-80: #{$secondary-color-80};
-	--secondaryColor-90: #{$secondary-color-90};
+	--secondaryColor-100: #{$secondary-color-100};
+	--secondaryColor-200: #{$secondary-color-200};
+	--secondaryColor-300: #{$secondary-color-300};
+	--secondaryColor-400: #{$secondary-color-400};
+	--secondaryColor-500: #{$secondary-color-500};
+	--secondaryColor-600: #{$secondary-color-600};
+	--secondaryColor-700: #{$secondary-color-700};
+	--secondaryColor-800: #{$secondary-color-800};
+	--secondaryColor-900: #{$secondary-color-900};
 
-	--tertiaryColor-10: #{$tertiary-color-10};
-	--tertiaryColor-20: #{$tertiary-color-20};
-	--tertiaryColor-30: #{$tertiary-color-30};
-	--tertiaryColor-40: #{$tertiary-color-40};
-	--tertiaryColor-50: #{$tertiary-color-50};
-	--tertiaryColor-60: #{$tertiary-color-60};
-	--tertiaryColor-70: #{$tertiary-color-70};
-	--tertiaryColor-80: #{$tertiary-color-80};
-	--tertiaryColor-90: #{$tertiary-color-90};
+	--tertiaryColor-100: #{$tertiary-color-100};
+	--tertiaryColor-200: #{$tertiary-color-200};
+	--tertiaryColor-300: #{$tertiary-color-300};
+	--tertiaryColor-400: #{$tertiary-color-400};
+	--tertiaryColor-500: #{$tertiary-color-500};
+	--tertiaryColor-600: #{$tertiary-color-600};
+	--tertiaryColor-700: #{$tertiary-color-700};
+	--tertiaryColor-800: #{$tertiary-color-800};
+	--tertiaryColor-900: #{$tertiary-color-900};
+
+	--gray-100: #{$gray-100};
+	--gray-200: #{$gray-200};
+	--gray-300: #{$gray-300};
+	--gray-400: #{$gray-400};
+	--gray-500: #{$gray-500};
+	--gray-600: #{$gray-600};
+	--gray-700: #{$gray-700};
+	--gray-800: #{$gray-800};
+	--gray-900: #{$gray-900};
 }
