@@ -1,7 +1,7 @@
 import "./App.css";
 import { ThemeContext, useTheme } from "../context/themeContext";
 import { LanguageContext, useLanguage } from "../context/languageContext";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import i18n from "i18next";
 import styled from "styled-components";
 import {
@@ -40,62 +40,26 @@ function App() {
 		window.scrollTo(0, 0);
 	};
 
-	const { theme, setTheme } = useTheme();
-	const { language, setLanguage } = useLanguage();
-
-	// color mode
-	useEffect(() => {
-		const savedTheme = window.localStorage.getItem("color-mode");
-		if (savedTheme) setTheme(savedTheme);
-		if (!savedTheme)
-			setTheme(
-				window.matchMedia("(prefers-color-scheme: dark)").matches
-					? "dark-mode"
-					: "light-mode"
-			);
-	}, []);
-
-	// language
-	useEffect(() => {
-		const savedLanguage = window.localStorage.getItem("language");
-
-		if (isLanguage(savedLanguage))
-			setLanguage(savedLanguage as LanguageAbbreviation);
-		const browserLanguage = navigator.language;
-		let language = LanguageAbbreviation.EN;
-
-		if (!savedLanguage) {
-			// Checks if the browserLanguage contains a language used by us
-			if (browserLanguage.startsWith("de")) {
-				language = LanguageAbbreviation.DE;
-			} else {
-				language = LanguageAbbreviation.EN;
-			}
-			setLanguage(language);
-		}
-	}, []);
+	const { theme, setTheme } = useContext(ThemeContext);
+	const { language, setLanguage } = useContext(LanguageContext);
 
 	return (
-		<LanguageContext.Provider value={{ language, setLanguage }}>
-			<ThemeContext.Provider value={{ theme, setTheme }}>
-				<div className="App" data-theme={theme}>
-					<StyledThemeToggle theme={theme} setTheme={setTheme} />
-					<StyledLanguageToggle
-						language={language}
-						setLanguage={setLanguage}
-						languages={languages}
-					/>
-					<div>
-						<p style={{ color: "var(--primaryColor)" }}>Primary Color</p>
-						<p style={{ color: "var(--primaryHover)" }}>Primary Color</p>
-						<p style={{ color: "var(--secondaryColor)" }}>Secondary Color</p>
-						<p style={{ color: "var(--secondaryHover)" }}>Secondary Color</p>
-						<p style={{ color: "var(--tertiaryColor)" }}>Tertiary Color</p>
-						<p style={{ color: "var(--tertiaryHover)" }}>Tertiary Color</p>
-					</div>
-				</div>
-			</ThemeContext.Provider>
-		</LanguageContext.Provider>
+		<div className="App" data-theme={theme}>
+			<StyledThemeToggle theme={theme} setTheme={setTheme} />
+			<StyledLanguageToggle
+				language={language}
+				setLanguage={setLanguage}
+				languages={languages}
+			/>
+			<div>
+				<p style={{ color: "var(--primaryColor)" }}>Primary Color</p>
+				<p style={{ color: "var(--primaryHover)" }}>Primary Color</p>
+				<p style={{ color: "var(--secondaryColor)" }}>Secondary Color</p>
+				<p style={{ color: "var(--secondaryHover)" }}>Secondary Color</p>
+				<p style={{ color: "var(--tertiaryColor)" }}>Tertiary Color</p>
+				<p style={{ color: "var(--tertiaryHover)" }}>Tertiary Color</p>
+			</div>
+		</div>
 	);
 }
 
