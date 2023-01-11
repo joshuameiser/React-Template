@@ -1,0 +1,27 @@
+/* TODO: Replace with own fonts (+ replace the font folder in data/fonts) */
+/* https://gwfh.mranftl.com/fonts/saira-extra-condensed?subsets=latin -- link to downloader */
+/* saira-extra-condensed-regular - latin */
+@font-face {
+	font-family: "Saira Extra Condensed";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Saira Extra Condensed"),
+		url("../data/fonts/saira-extra-condensed-v11-latin/saira-extra-condensed-v11-latin-regular.woff2")
+			format("woff2"),
+		url("../data/fonts/saira-extra-condensed-v11-latin/saira-extra-condensed-v11-latin-regular.woff")
+			format("woff");
+	font-display: block;
+}
+/* saira-extra-condensed-700 - latin */
+@font-face {
+	font-family: "Saira Extra Condensed";
+	font-style: normal;
+	font-weight: 700;
+	src: local("Saira Extra Condensed"),
+		url("../data/fonts/saira-extra-condensed-v11-latin/saira-extra-condensed-v11-latin-700.woff2")
+			format("woff2"),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */
+			url("../data/fonts/saira-extra-condensed-v11-latin/saira-extra-condensed-v11-latin-700.woff")
+			format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	font-display: block;
+}
