@@ -14,7 +14,7 @@
 		"react-dom": "^18.0.0",
 		"react-i18next": "^12.1.1",
 		"styled-components": "^5.3.6",
-        "@fortawesome/fontawesome-svg-core": "^6.3.0",
+        "@fortawesome/fontawesome-svg-core": "^6.3.0"
 	},
 	"devDependencies": {
 		"@types/react": "^18.0.0",
